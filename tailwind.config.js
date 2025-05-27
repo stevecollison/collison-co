@@ -1,0 +1,14 @@
+
+module.exports = {
+  content: ['./pages/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        playfair: ['"Playfair Display"', 'serif'],
+        inter: ['Inter', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif']
+      }
+    }
+  },
+  plugins: []
+};
