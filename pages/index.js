@@ -14,7 +14,14 @@ export default function Home() {
         {/* Hero Section */}
         <section className="px-6 py-12 md:py-24 text-center">
           <div className="max-w-4xl mx-auto">
-            <Image src="/collison.jpg" alt="Collison & Co logo" width={160} height={160} className="mx-auto mb-4" />
+            {/* Using an external placeholder image so the build doesn't fail if a local image is missing */}
+            <Image
+              src="https://via.placeholder.com/160"
+              alt="Collison & Co logo"
+              width={160}
+              height={160}
+              className="mx-auto mb-4"
+            />
             <h1 className="text-5xl font-bold font-playfair mb-2">Collison & Co</h1>
             <p className="text-[#B1AA99] text-lg mb-6">Design. Craft. Precision.</p>
             <button className="px-6 py-3 bg-black text-white rounded font-semibold tracking-wider">Start Your Project</button>
@@ -24,7 +31,14 @@ export default function Home() {
         {/* Photo / Showcase */}
         <section className="px-6">
           <div className="max-w-5xl mx-auto shadow-md rounded overflow-hidden">
-            <Image src="/IMG_1638.JPG" alt="Dining Room Renovation" width={1200} height={800} className="w-full h-auto" />
+            {/* External placeholder in place of a local photo */}
+            <Image
+              src="https://via.placeholder.com/1200x800"
+              alt="Dining Room Renovation"
+              width={1200}
+              height={800}
+              className="w-full h-auto"
+            />
           </div>
         </section>
 
